@@ -11,5 +11,7 @@ docker.image('node:6-alpine').withRun('-p 3000:3000')
             submoduleCfg: [], 
             userRemoteConfigs: [[url: 'https://github.com/lbrandis/simple-node-js-react-npm-app.git']]]
             )
+        
+        sh 'npm install'
      }
  }
