@@ -1,4 +1,4 @@
-docker.image('node:6-alpine').withRun('-p 3000:3000') 
+docker.image('node:6-alpine').inside('-p 3000:3000') 
 {
 
     stage('Build') 
