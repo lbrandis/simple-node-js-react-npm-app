@@ -13,5 +13,10 @@ docker.image('node:6-alpine').inside('-p 3000:3000')
             )
         
         sh 'npm install'
-     }
+    }
+    
+    stage('Test')
+    {
+        sh 'npm test'
+    }
  }
