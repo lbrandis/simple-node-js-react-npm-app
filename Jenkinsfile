@@ -17,6 +17,6 @@ docker.image('node:9.11-alpine').inside('-p 3000:3000')
     
     stage('Test')
     {
-        sh 'npm test'
+        sh './jenkins/scripts/test.sh'
     }
  }
