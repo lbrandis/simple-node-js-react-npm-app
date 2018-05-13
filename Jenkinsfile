@@ -1,5 +1,9 @@
 docker.image('node:9.11-alpine').inside('-p 3000:3000') 
 {
+    environment 
+    {
+        CI = 'true' 
+    }
 
     stage('Build') 
     {
